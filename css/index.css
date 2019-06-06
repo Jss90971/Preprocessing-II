@@ -148,12 +148,21 @@ h1 {
   padding-top: 1.56%;
   padding-bottom: 15px;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3em;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
 h4 {
   font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+h5 {
+  font-size: 3.6rem;
   padding-bottom: 10px;
 }
 p {
@@ -165,19 +174,33 @@ img {
   max-width: 100%;
   height: auto;
 }
+.fun-bus {
+  padding-bottom: 20px;
+}
+hr {
+  border-top: 2px dashed #C0C0C0;
+}
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 nav {
-  padding-top: 3.7%;
+  padding-top: 3.3%;
 }
 nav a {
   padding: 10px 10px;
   color: black;
   text-decoration: none;
   font-size: 1.6em;
+}
+@media (max-width: 500px) {
+  nav {
+    padding: 0 0 10px 0;
+  }
+  nav a {
+    padding: 25px 30px;
+  }
 }
 .footer {
   width: 100%;
@@ -207,7 +230,7 @@ nav a {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.home .content-section img {
   border-radius: 10px;
 }
 .home .inverse-content {
@@ -240,6 +263,11 @@ nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
+}
 .home .content-pick .btn {
   display: flex;
   justify-content: center;
@@ -260,4 +288,18 @@ nav a {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
